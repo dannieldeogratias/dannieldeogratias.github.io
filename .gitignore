@@ -1,1 +1,20 @@
+# Local previews and generated files
+tmp/
+dist/
 *-live.png
+
+# Dependencies
+node_modules/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

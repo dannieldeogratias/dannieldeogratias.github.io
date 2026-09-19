@@ -1,34 +1,87 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Selected digital products and interactive prototypes by Danniel Deogratias." />
-  <title>Danniel Deogratias — Product Portfolio</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a4f3d'/%3E%3Cpath d='M18 18h14c10 0 16 5 16 14s-6 14-16 14H18V18zm9 7v14h5c5 0 8-2 8-7s-3-7-8-7h-5z' fill='%23f2cf68'/%3E%3C/svg%3E" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
-    :root{--ink:#123f32;--cream:#f8f7f0;--paper:#fffef9;--gold:#edcf72;--line:#d7ddcf;--muted:#5e746c;--plum:#4a1554}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 'IBM Plex Sans',sans-serif}a{color:inherit}header,main,footer{width:min(1180px,calc(100% - 40px));margin:auto}
-    nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--line)}.wordmark{font-family:'Libre Caslon Display',Georgia,serif;font-size:1.45rem;text-decoration:none}.navlinks{display:flex;gap:24px}.navlinks a{font-size:.92rem;text-underline-offset:5px}
-    .intro{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:96px 0 80px}.eyebrow{margin:0 0 18px;color:var(--muted);font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.intro h1{max-width:760px;margin:0;font:400 clamp(3.4rem,8vw,7rem)/.95 'Libre Caslon Display',Georgia,serif;letter-spacing:-.04em}.intro h1 em{color:#798a3d;font-weight:400}.intro aside{align-self:end;padding:28px;border-left:3px solid var(--gold)}.intro aside p{margin:0;color:var(--muted)}
-    .projects-head{display:flex;align-items:end;justify-content:space-between;padding:28px 0;border-top:1px solid var(--line)}h2{margin:0;font:400 clamp(2.1rem,5vw,4rem)/1 'Libre Caslon Display',Georgia,serif}.count{color:var(--muted);font-size:.85rem}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding:28px 0 96px}.project{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--paper);transition:transform .2s ease,box-shadow .2s ease}.project:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(18,63,50,.09)}.visual{height:380px;overflow:hidden;background:#e8ebdf}.visual img{width:100%;height:100%;object-fit:cover;object-position:top}.project.kikoba .visual{display:grid;place-items:center;background:var(--plum)}.project.kikoba .visual img{width:auto;height:94%;object-fit:contain}.body{padding:28px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}.body h3{margin:14px 0 9px;font:400 2rem/1.1 'Libre Caslon Display',Georgia,serif}.body p{min-height:78px;margin:0;color:var(--muted)}.actions{display:flex;gap:12px;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--ink);border-radius:9px;font-weight:600;text-decoration:none}.button.primary{background:var(--ink);color:white}.button:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
-    footer{display:flex;justify-content:space-between;padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
-    @media(max-width:760px){header,main,footer{width:min(100% - 28px,1180px)}.navlinks{gap:12px}.intro{grid-template-columns:1fr;padding:64px 0}.intro aside{align-self:auto}.grid{grid-template-columns:1fr}.visual{height:310px}.projects-head{align-items:start;gap:16px}.body p{min-height:0}footer{display:grid;gap:8px}}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Portfolio of Daniel Deogratius Shayo, a Computer Engineering student building practical software, Android products, networks, and secure digital systems in Tanzania.">
+  <meta name="theme-color" content="#f1f4ee">
+  <meta property="og:title" content="Daniel Shayo | Computer Engineer and Product Builder">
+  <meta property="og:description" content="Practical software, Android products, networking, and cybersecurity work from Tanzania.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dannieldeogratias.github.io/">
+  <meta property="og:image" content="https://dannieldeogratias.github.io/assets/kitabu-preview.png">
+  <title>Daniel Shayo | Computer Engineer and Product Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Daniel Deogratius Shayo","url":"https://dannieldeogratias.github.io/","email":"mailto:shayodaniel21@gmail.com","telephone":"+255749828255","jobTitle":"Computer Engineering Student","alumniOf":{"@type":"CollegeOrUniversity","name":"Dar es Salaam Institute of Technology"},"sameAs":["https://github.com/dannieldeogratias"],"knowsAbout":["Computer Engineering","Software Development","Android Development","Computer Networking","Cybersecurity","CCNA"]}</script>
 </head>
 <body>
-  <header><nav><a class="wordmark" href="#top">Danniel Deogratias</a><div class="navlinks"><a href="#work">Work</a><a href="https://github.com/dannieldeogratias">GitHub ↗</a></div></nav></header>
-  <main id="top">
-    <section class="intro"><div><p class="eyebrow">Digital product portfolio · Tanzania</p><h1>Useful products,<br>built with <em>purpose.</em></h1></div><aside><p>Selected education and community-finance products—shown as working, interactive prototypes rather than static screenshots.</p></aside></section>
-    <section id="work"><div class="projects-head"><div><p class="eyebrow">Selected work</p><h2>Products you can explore</h2></div><span class="count">02 projects</span></div>
-      <div class="grid">
-        <article class="project"><div class="visual"><img src="assets/kitabu-preview.png" alt="Kitabu Digital learning platform homepage" /></div><div class="body"><div class="meta"><span>Education</span><span>Web platform</span></div><h3>Kitabu Digital</h3><p>A calm, accessible learning portal for Tanzanian students, schools and families, designed around discovery and dependable practice.</p><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kitabu-digital-demo/">Open prototype ↗</a><a class="button" href="https://github.com/dannieldeogratias/kitabu-digital-demo">View code</a></div></div></article>
-        <article class="project kikoba"><div class="visual"><img src="assets/kikoba-preview.png" alt="Kikoba Digital community savings mobile application" /></div><div class="body"><div class="meta"><span>Community finance</span><span>Android + prototype</span></div><h3>Kikoba Digital</h3><p>An offline-first VICOBA/SACCOS manager for group leaders, covering members, contributions, expenses, meetings and local elections.</p><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kikoba-digital-demo/">Open prototype ↗</a><a class="button" href="https://github.com/dannieldeogratias/kikoba-digital-demo">View demo code</a></div></div></article>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" aria-label="Daniel Shayo, home"><span class="monogram" aria-hidden="true">DS</span><span>Daniel Shayo</span></a>
+      <div class="nav-links">
+        <a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#background">Background</a><a class="nav-contact" href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span aria-hidden="true">◐</span></button>
       </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy reveal">
+        <p class="kicker">Computer Engineering + Product Development</p>
+        <h1>I build useful systems that <span>work.</span></h1>
+        <p class="hero-summary">Software, Android products, networks, and secure digital tools built for real needs.</p>
+        <div class="actions"><a class="button primary" href="#work">View my work</a><a class="button secondary" href="assets/Daniel-Shayo-CV.pdf" download>Download CV</a></div>
+      </div>
+      <aside class="hero-facts reveal" aria-label="Profile highlights">
+        <div class="fact"><strong>Computer Engineering</strong><span>DIT, Bachelor of Engineering, 2023-2027</span></div>
+        <div class="fact"><strong>Cisco CCNA</strong><span>Routing, switching, security, and automation</span></div>
+        <div class="fact"><strong>Dar es Salaam</strong><span>Available for internships and collaborations</span></div>
+      </aside>
     </section>
+
+    <section class="section work" id="work"><div class="shell">
+      <header class="section-heading reveal"><p class="kicker">Selected work</p><h2>Products shaped around real people.</h2><p>Two practical platforms designed, built, tested, and presented as working experiences.</p></header>
+      <div class="project-list">
+        <article class="project reveal">
+          <a class="project-media" href="https://dannieldeogratias.github.io/kitabu-digital-demo/" aria-label="Open the Kitabu Digital live demo"><img src="assets/kitabu-preview.png" alt="Kitabu Digital learning platform shown on desktop and mobile screens" width="1600" height="1000" loading="lazy"></a>
+          <div class="project-copy"><p class="project-type">Education platform</p><h3>Kitabu Digital</h3><p>An offline-minded learning portal for Tanzanian students, schools, and families, focused on dependable access and clear discovery.</p><ul class="project-skills" aria-label="Kitabu Digital technologies"><li>React</li><li>Responsive UI</li><li>Offline-first</li><li>Accessibility</li></ul><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kitabu-digital-demo/">Live demo</a><a class="button secondary" href="https://github.com/dannieldeogratias/kitabu-digital-demo">Source code</a></div></div>
+        </article>
+        <article class="project reveal">
+          <a class="project-media phone" href="https://dannieldeogratias.github.io/kikoba-digital-demo/" aria-label="Open the Kikoba Digital live demo"><img src="assets/kikoba-preview.png" alt="Kikoba Digital community savings application on a tablet" width="1600" height="1000" loading="lazy"></a>
+          <div class="project-copy"><p class="project-type">Community finance application</p><h3>Kikoba Digital</h3><p>An offline-first Android system for savings groups, covering membership, contributions, expenses, meetings, roles, and local elections.</p><ul class="project-skills" aria-label="Kikoba Digital technologies"><li>Android</li><li>Kotlin</li><li>SQLite</li><li>Tablet UI</li></ul><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kikoba-digital-demo/">Live demo</a><a class="button secondary" href="https://github.com/dannieldeogratias/kikoba-digital-demo">Source code</a></div></div>
+        </article>
+      </div>
+    </div></section>
+
+    <section class="section capabilities" id="expertise"><div class="shell">
+      <header class="section-heading reveal"><h2>Technical range, practical focus.</h2><p>I connect software development with the infrastructure and security knowledge needed to deliver dependable systems.</p></header>
+      <div class="capability-grid">
+        <article class="capability reveal"><p class="capability-number">01</p><h3>Software and mobile</h3><p>Python, Java, C, JavaScript, React, HTML, CSS, Android packaging, Kotlin, and Git-based delivery.</p></article>
+        <article class="capability reveal"><p class="capability-number">02</p><h3>Networks and infrastructure</h3><p>IP addressing, subnetting, VLANs, routing, switching, OSPF, EIGRP, NAT, DHCP, Linux, and AWS fundamentals.</p></article>
+        <article class="capability reveal"><p class="capability-number">03</p><h3>Security and emerging technology</h3><div class="skill-groups"><div><strong>Cybersecurity</strong><span>OWASP Top 10, Nmap, Wireshark, Burp Suite, threat modeling, and vulnerability assessment.</span></div><div><strong>Automation</strong><span>Network programmability foundations, practical troubleshooting, and repeatable technical workflows.</span></div><div><strong>AI and ML</strong><span>NumPy, pandas, scikit-learn, TensorFlow fundamentals, and supervised learning concepts.</span></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section background" id="background"><div class="shell background-grid">
+      <div class="background-intro reveal"><h2>Learning by building.</h2></div>
+      <div class="timeline reveal">
+        <article class="timeline-item"><time datetime="2023">2023 to 2027</time><h3>BEng in Computer Engineering</h3><p>Dar es Salaam Institute of Technology. Developing foundations across computing, electronics, software, and infrastructure.</p></article>
+        <article class="timeline-item"><time datetime="2024-08">August to September 2024</time><h3>Cisco Certified Network Associate</h3><p>Completed the CCNA curriculum with hands-on configuration and troubleshooting of routers, switches, and network services.</p></article>
+        <article class="timeline-item"><time datetime="2025-08">August to September 2025</time><h3>Cybersecurity Fundamentals</h3><p>Studied threat modeling, vulnerability assessment, web application security, cryptography, security tooling, and incident response.</p></article>
+        <article class="timeline-item"><time datetime="2026">Now</time><h3>Product development and security labs</h3><p>Building Android and web products while developing practical security depth through CTF challenges and lab environments.</p></article>
+      </div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="shell">
+      <div class="contact-panel reveal">
+        <div><p class="kicker">Start a conversation</p><h2>Let’s build something useful.</h2><p>I am open to internships, junior opportunities, technical collaborations, and practical projects.</p></div>
+        <div class="contact-links"><a href="mailto:shayodaniel21@gmail.com">Email <span>shayodaniel21@gmail.com</span></a><a href="mailto:shayo18@icloud.com">iCloud <span>shayo18@icloud.com</span></a><a href="tel:+255779324104">Call <span>+255 779 324 104</span></a><a href="tel:+255749828255">Call <span>+255 749 828 255</span></a><a href="https://github.com/dannieldeogratias">GitHub <span>@dannieldeogratias</span></a></div>
+      </div>
+      <footer><span>© <span id="year">2026</span> Daniel Deogratius Shayo</span><span>English and Swahili</span></footer>
+    </div></section>
   </main>
-  <footer><span>© 2026 Danniel Deogratias</span><span>Designed and built in Tanzania.</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
