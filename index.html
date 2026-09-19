@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Selected digital products and interactive prototypes by Danniel Deogratias." />
+  <title>Danniel Deogratias — Product Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a4f3d'/%3E%3Cpath d='M18 18h14c10 0 16 5 16 14s-6 14-16 14H18V18zm9 7v14h5c5 0 8-2 8-7s-3-7-8-7h-5z' fill='%23f2cf68'/%3E%3C/svg%3E" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap');
+    :root{--ink:#123f32;--cream:#f8f7f0;--paper:#fffef9;--gold:#edcf72;--line:#d7ddcf;--muted:#5e746c;--plum:#4a1554}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 'IBM Plex Sans',sans-serif}a{color:inherit}header,main,footer{width:min(1180px,calc(100% - 40px));margin:auto}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0;border-bottom:1px solid var(--line)}.wordmark{font-family:'Libre Caslon Display',Georgia,serif;font-size:1.45rem;text-decoration:none}.navlinks{display:flex;gap:24px}.navlinks a{font-size:.92rem;text-underline-offset:5px}
+    .intro{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;padding:96px 0 80px}.eyebrow{margin:0 0 18px;color:var(--muted);font-size:.75rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.intro h1{max-width:760px;margin:0;font:400 clamp(3.4rem,8vw,7rem)/.95 'Libre Caslon Display',Georgia,serif;letter-spacing:-.04em}.intro h1 em{color:#798a3d;font-weight:400}.intro aside{align-self:end;padding:28px;border-left:3px solid var(--gold)}.intro aside p{margin:0;color:var(--muted)}
+    .projects-head{display:flex;align-items:end;justify-content:space-between;padding:28px 0;border-top:1px solid var(--line)}h2{margin:0;font:400 clamp(2.1rem,5vw,4rem)/1 'Libre Caslon Display',Georgia,serif}.count{color:var(--muted);font-size:.85rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;padding:28px 0 96px}.project{overflow:hidden;border:1px solid var(--line);border-radius:22px;background:var(--paper);transition:transform .2s ease,box-shadow .2s ease}.project:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(18,63,50,.09)}.visual{height:380px;overflow:hidden;background:#e8ebdf}.visual img{width:100%;height:100%;object-fit:cover;object-position:top}.project.kikoba .visual{display:grid;place-items:center;background:var(--plum)}.project.kikoba .visual img{width:auto;height:94%;object-fit:contain}.body{padding:28px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}.body h3{margin:14px 0 9px;font:400 2rem/1.1 'Libre Caslon Display',Georgia,serif}.body p{min-height:78px;margin:0;color:var(--muted)}.actions{display:flex;gap:12px;margin-top:24px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border:1px solid var(--ink);border-radius:9px;font-weight:600;text-decoration:none}.button.primary{background:var(--ink);color:white}.button:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+    footer{display:flex;justify-content:space-between;padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+    @media(max-width:760px){header,main,footer{width:min(100% - 28px,1180px)}.navlinks{gap:12px}.intro{grid-template-columns:1fr;padding:64px 0}.intro aside{align-self:auto}.grid{grid-template-columns:1fr}.visual{height:310px}.projects-head{align-items:start;gap:16px}.body p{min-height:0}footer{display:grid;gap:8px}}
+  </style>
+</head>
+<body>
+  <header><nav><a class="wordmark" href="#top">Danniel Deogratias</a><div class="navlinks"><a href="#work">Work</a><a href="https://github.com/dannieldeogratias">GitHub ↗</a></div></nav></header>
+  <main id="top">
+    <section class="intro"><div><p class="eyebrow">Digital product portfolio · Tanzania</p><h1>Useful products,<br>built with <em>purpose.</em></h1></div><aside><p>Selected education and community-finance products—shown as working, interactive prototypes rather than static screenshots.</p></aside></section>
+    <section id="work"><div class="projects-head"><div><p class="eyebrow">Selected work</p><h2>Products you can explore</h2></div><span class="count">02 projects</span></div>
+      <div class="grid">
+        <article class="project"><div class="visual"><img src="assets/kitabu-preview.png" alt="Kitabu Digital learning platform homepage" /></div><div class="body"><div class="meta"><span>Education</span><span>Web platform</span></div><h3>Kitabu Digital</h3><p>A calm, accessible learning portal for Tanzanian students, schools and families, designed around discovery and dependable practice.</p><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kitabu-digital-demo/">Open prototype ↗</a><a class="button" href="https://github.com/dannieldeogratias/kitabu-digital-demo">View code</a></div></div></article>
+        <article class="project kikoba"><div class="visual"><img src="assets/kikoba-preview.png" alt="Kikoba Digital community savings mobile application" /></div><div class="body"><div class="meta"><span>Community finance</span><span>Android + prototype</span></div><h3>Kikoba Digital</h3><p>An offline-first VICOBA/SACCOS manager for group leaders, covering members, contributions, expenses, meetings and local elections.</p><div class="actions"><a class="button primary" href="https://dannieldeogratias.github.io/kikoba-digital-demo/">Open prototype ↗</a><a class="button" href="https://github.com/dannieldeogratias/kikoba-digital-demo">View demo code</a></div></div></article>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 Danniel Deogratias</span><span>Designed and built in Tanzania.</span></footer>
+</body>
+</html>
