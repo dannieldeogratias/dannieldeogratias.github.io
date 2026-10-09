@@ -1,111 +1,43 @@
 ---
 name: Daniel Shayo Engineering Portfolio
-description: Evidence-first systems passport for engineering work
+description: Kinetic editorial portfolio for engineering work in progress
 colors:
-  signal-blue: "#0649d8"
-  paper: "#f4f6f8"
-  surface: "#ffffff"
-  ink: "#101318"
-  muted: "#5d6570"
-  line: "#cbd1d8"
-  build-signal: "#98f542"
+  paper: "#f2f2f0"
+  ink: "#0b0b0b"
+  signal-orange: "#e44700"
+  test-lime: "#d9ff43"
 typography:
-  display:
-    fontFamily: "DM Sans, sans-serif"
-    fontSize: "clamp(3.4rem, 6.2vw, 5.8rem)"
-    fontWeight: 700
-    lineHeight: 0.92
-    letterSpacing: "-0.04em"
-  body:
-    fontFamily: "DM Sans, sans-serif"
-    fontSize: "1rem"
-    fontWeight: 400
-    lineHeight: 1.55
-  label:
-    fontFamily: "IBM Plex Mono, monospace"
-    fontSize: "0.72rem"
-    fontWeight: 500
-rounded:
-  control: "12px"
-spacing:
-  control: "17px"
-  section: "clamp(96px, 12vw, 160px)"
-components:
-  button-primary:
-    backgroundColor: "{colors.signal-blue}"
-    textColor: "#ffffff"
-    rounded: "{rounded.control}"
-    padding: "0 17px"
-    height: "48px"
+  display: "DM Sans 700"
+  body: "DM Sans 400"
+  metadata: "IBM Plex Mono 500"
+motion:
+  scroll: "Lenis smooth wheel"
+  choreography: "GSAP ScrollTrigger"
 ---
 
-# Design System Daniel Shayo Engineering Portfolio
+# Design System — Engineering in Motion
 
-## Overview
+## Creative north star
 
-**Creative North Star: "The Systems Passport"**
+A moving engineering field notebook. The portfolio should feel authored, direct, and unfinished in the productive sense: real work is shown at useful scale, current limits are named, and every section advances the story.
 
-The portfolio presents every project as an inspected engineering record. Work leads visually, while concise status, evidence, and next-step fields let a recruiter distinguish implementation from ambition. The system feels precise and calm without resembling a generic developer dashboard.
+## Visual language
 
-**Key Characteristics:**
-- Evidence before claims
-- High-contrast white, graphite, and signal blue
-- Project records separated by rules rather than card shells
-- Functional translucency restricted to sticky navigation
-- Compact mono labels reserved for record metadata
-
-## Colors
-
-Signal blue identifies actions and links. Cool paper and white surfaces create separation without decorative gradients. Lime marks active development only.
-
-**The Signal Rule.** Lime is reserved for availability and active-development state; it never becomes general decoration.
-
-## Typography
-
-**Display Font:** DM Sans
-**Body Font:** DM Sans
-**Label Font:** IBM Plex Mono
-
-Display text is dense and decisive. Body text stays neutral and readable. Mono text appears only where a record, date, status, or technical label benefits from measured alignment.
-
-**The Evidence Voice Rule.** Large type states purpose; small mono type identifies evidence. Neither substitutes for body explanation.
+Off-white paper and black form the base. Signal orange carries the main voice and contact action. Acid lime appears only in the moving discipline strip and active build states. Large type creates the composition; rules and mono labels provide technical rhythm without imitating a dashboard.
 
 ## Layout
 
-The page uses a fluid container capped at 1280px. The first viewport pairs the professional proposition with current work. Project records expand to the full reading width; secondary projects form a two-column comparison and become a single stream below 640px. Major sections use generous responsive spacing.
+The opening frame uses oversized typography, sparse metadata, and a small live experiment window. Projects are full-screen chapters: imagery stays pinned while the project story passes beside it. Practice becomes one high-energy lime field. Background remains a quiet ruled list.
 
-## Elevation & Depth
+## Motion
 
-The system is flat by default. Borders and tonal changes establish hierarchy. Only the opening project image receives ambient depth; navigation blur is functional because content scrolls beneath it.
+GSAP controls the opening type reveal, project image parallax, copy entrances, ticker movement, and reading progress. Lenis provides restrained wheel smoothing. Motion is tied to scroll and never blocks navigation. `prefers-reduced-motion` removes the choreography while preserving every element.
 
-## Shapes
+## Rules
 
-Content regions remain rectangular and edge-aligned. Twelve-pixel corners belong to controls. Status marks are circular because they represent state, not containers.
-
-## Components
-
-### Buttons
-- Primary actions use signal blue, white text, 48px minimum height, and 12px corners.
-- Secondary actions use the surface color and a neutral border.
-- Hover lifts by two pixels; focus uses a three-pixel blue outline.
-
-### Project Records
-- A thin ink rule starts each record.
-- Metadata shares one line above imagery.
-- Evidence uses definition-list rows so labels and implementation details scan consistently.
-
-### Navigation
-- Sticky navigation uses restrained background blur with an opaque fallback for reduced transparency.
-- Mobile navigation preserves Projects and Contact while hiding lower-priority anchors.
-
-## Do's and Don'ts
-
-### Do:
-- **Do** lead with real project imagery and working links.
-- **Do** distinguish current implementation from future development.
-- **Do** preserve strong keyboard focus, reduced motion, and responsive reflow.
-
-### Don't:
-- **Don't** wrap every section in rounded cards.
-- **Don't** invent adoption, performance, or production claims.
-- **Don't** use lime as a broad accent or mono type as a technical costume.
+- Use project chapters, never interchangeable cards.
+- Lead with the artifact and name uncertainty plainly.
+- Keep one palette; do not add a theme switcher.
+- Reserve mono type for metadata, state, and captions.
+- Reserve orange for voice and action; reserve lime for process and active state.
+- Preserve keyboard focus, semantic landmarks, readable contrast, and mobile reflow.
