@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T07:30:00Z",
+  "title": "Design System Daniel Shayo Engineering Portfolio",
+  "extensions": {
+    "shadows": [{"name":"proof-ambient","value":"0 24px 80px rgba(0,0,0,.14)","purpose":"Opening project evidence only"}],
+    "motion": [{"name":"state","value":"180ms ease-out","purpose":"Control hover and image response"}],
+    "breakpoints": [{"name":"compact","value":"640px"},{"name":"stacked","value":"900px"}]
+  },
+  "components": [{"name":"Primary Action","kind":"button","refersTo":"button-primary","description":"Main project or CV action","html":"<a class=\"ds-action\" href=\"#\">INSPECT PROJECT</a>","css":".ds-action{display:inline-flex;min-height:48px;align-items:center;padding:0 17px;border-radius:12px;background:#0649d8;color:#fff;font:600 14px 'DM Sans',sans-serif;text-decoration:none;transition:transform .18s}.ds-action:hover{transform:translateY(-2px)}.ds-action:focus-visible{outline:3px solid #0649d8;outline-offset:4px}"}],
+  "narrative": {
+    "northStar": "The Systems Passport",
+    "overview": "An evidence-first engineering portfolio where projects read as inspected records and implementation remains distinct from ambition.",
+    "keyCharacteristics": ["Evidence before claims","Signal blue actions","Rule-separated project records","Functional navigation translucency"],
+    "rules": [{"name":"The Signal Rule","body":"Lime is reserved for availability and active-development state.","section":"colors"},{"name":"The Evidence Voice Rule","body":"Large type states purpose; small mono type identifies evidence.","section":"typography"}],
+    "dos": ["Lead with real project imagery and working links.","Distinguish current implementation from future development."],
+    "donts": ["Do not wrap every section in rounded cards.","Do not invent adoption, performance, or production claims."]
+  }
+}
