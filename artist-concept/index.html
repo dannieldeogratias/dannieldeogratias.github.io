@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080704">
+  <meta name="description" content="Nuru Noir, a fictional music artist experience and visual design concept by Daniel Shayo.">
+  <title>Nuru Noir | Afterlight</title>
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <a class="skip-link" href="#record">Skip to the record</a>
+  <div class="ambient-water" aria-hidden="true"></div>
+
+  <div class="opening" aria-hidden="true">
+    <div class="opening-mark"><span>NURU</span><span>NOIR</span></div>
+    <div class="opening-line"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Nuru Noir home">NURU / NOIR</a>
+    <nav aria-label="Primary navigation">
+      <a href="#record">Enter</a>
+      <a href="#albums">Albums</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="listen-link" href="#record">Explore the work</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-frame">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="hero-label">A fictional artist experience</p>
+          <h1 id="hero-title"><span>NURU NOIR</span><span>AFTERLIGHT</span></h1>
+          <p class="hero-intro">Songs for the hour when water turns black and every reflection becomes gold.</p>
+          <a class="primary-action" href="#record"><span>Enter the record</span><b aria-hidden="true">↘</b></a>
+        </div>
+        <div class="water-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <section class="disc-gateway" id="record" aria-labelledby="gateway-title">
+      <div class="gateway-copy reveal">
+        <p>Three releases. One reflected world.</p>
+        <h2 id="gateway-title">Press the record.<br>Open the archive.</h2>
+        <span>The disc is the navigation.</span>
+      </div>
+      <button class="gateway-disc reveal" type="button" aria-label="Open the Nuru Noir album archive">
+        <img src="assets/gold-vinyl.jpg" alt="">
+        <span>Open archive</span>
+      </button>
+    </section>
+
+    <section class="album-section" id="albums" aria-labelledby="album-title">
+      <div class="album-copy reveal" aria-live="polite">
+        <p class="album-count">Album 01</p>
+        <h2 id="album-title">Afterlight</h2>
+        <p id="album-description">A six-track visual release shaped by low voices, slow percussion and gold moving across black water.</p>
+        <dl>
+          <div><dt>Form</dt><dd id="album-form">Visual album and web experience</dd></div>
+          <div><dt>Featured piece</dt><dd id="album-track">Gold on Water</dd></div>
+        </dl>
+        <p class="fiction-note">Fictional music concept created as a design study.</p>
+      </div>
+      <div class="album-stack reveal" role="group" aria-label="Choose an album project">
+        <button class="album-disc album-disc-one is-active" type="button" data-album="afterlight" aria-controls="album-title" aria-pressed="true"><img src="assets/gold-vinyl.jpg" alt="Afterlight reflective gold disc"><span>Afterlight</span></button>
+        <button class="album-disc album-disc-two" type="button" data-album="black-current" aria-controls="album-title" aria-pressed="false"><img src="assets/gold-disc.jpg" alt="Black Current concentric gold disc"><span>Black Current</span></button>
+        <button class="album-disc album-disc-three" type="button" data-album="amber-static" aria-controls="album-title" aria-pressed="false"><img src="assets/gold-vinyl.jpg" alt="Amber Static gold disc"><span>Amber Static</span></button>
+      </div>
+    </section>
+
+    <section class="cassette-section reveal" id="visuals">
+      <div class="cassette-copy">
+        <h2>Light can be recorded.</h2>
+        <p>The archive imagines each song as a physical object: warm plastic, magnetic tape and reflections that refuse to stay still.</p>
+      </div>
+      <figure class="cassette-image">
+        <img src="assets/gold-cassette.jpg" alt="Hand holding a glowing gold cassette">
+        <figcaption>Afterlight cassette study</figcaption>
+      </figure>
+    </section>
+
+    <section class="about" id="about">
+      <p class="reveal">Nuru Noir is a fictional music identity created to explore art direction, responsive editorial design and motion on the web.</p>
+      <a class="primary-action reveal" href="../#projects"><span>Return to Daniel’s portfolio</span><b aria-hidden="true">↗</b></a>
+    </section>
+  </main>
+
+  <footer><span>NURU / NOIR</span><span>Concept and web design by Daniel Shayo</span><span>2026</span></footer>
+  <script src="script.js?v=4"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 ---
 name: Daniel Shayo Engineering Portfolio
-description: Kinetic editorial portfolio for engineering work in progress
+description: Signal Laboratory portfolio for engineering work in progress
 colors:
   paper: "#f2f2f0"
   ink: "#0b0b0b"
-  signal-orange: "#e44700"
+  signal-orange: "#b73500"
   test-lime: "#d9ff43"
 typography:
   display: "DM Sans 700"
@@ -15,23 +15,23 @@ motion:
   choreography: "GSAP ScrollTrigger"
 ---
 
-# Design System — Engineering in Motion
+# Design System — Signal Laboratory
 
 ## Creative north star
 
-A moving engineering field notebook. The portfolio should feel authored, direct, and unfinished in the productive sense: real work is shown at useful scale, current limits are named, and every section advances the story.
+A live engineering signal from Dar es Salaam. The portfolio should feel precise, responsive, and actively measured: real work is shown at useful scale, current limits are named, and every section advances the story.
 
 ## Visual language
 
-Off-white paper and black form the base. Signal orange carries the main voice and contact action. Acid lime appears only in the moving discipline strip and active build states. Large type creates the composition; rules and mono labels provide technical rhythm without imitating a dashboard.
+Off-white paper and black still structure the case studies, while the opening becomes a near-black signal field. Acid lime marks live state, measurement and interaction; signal orange carries the contact action. Large type creates the composition; rules and mono labels provide technical rhythm without imitating a dashboard.
 
 ## Layout
 
-The opening frame uses oversized typography, sparse metadata, and a small live experiment window. Projects are full-screen chapters: imagery stays pinned while the project story passes beside it. Practice becomes one high-energy lime field. Background remains a quiet ruled list.
+The opening frame uses oversized transmission language, calibrated metadata, a live experiment window and restrained field geometry to make negative space intentional. Projects remain full-screen chapters: imagery stays pinned while the project story passes beside it. Practice becomes one high-energy lime field. Background remains a quiet ruled list.
 
 ## Motion
 
-GSAP controls the opening type reveal, project image parallax, copy entrances, ticker movement, and reading progress. Lenis provides restrained wheel smoothing. Motion is tied to scroll and never blocks navigation. `prefers-reduced-motion` removes the choreography while preserving every element.
+The rare opening moment scans outlined letterforms into a completed signal. Interaction motion follows Emil Kowalski’s principles: purposeful, quick, interruptible where repeated, strongly eased, pointer-gated, and reduced for motion-sensitive visitors. GSAP controls project image parallax, copy entrances, ticker movement, and reading progress. Lenis provides restrained wheel smoothing.
 
 ## Rules
 

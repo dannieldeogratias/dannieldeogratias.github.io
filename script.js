@@ -2,6 +2,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+const conceptHero = document.querySelector('.concept-hero');
+window.addEventListener('load', () => requestAnimationFrame(() => conceptHero?.classList.add('is-scanning')));
+
 if (!reduceMotion && window.gsap && window.ScrollTrigger && window.Lenis) {
   gsap.registerPlugin(ScrollTrigger);
   const lenis = new Lenis({ duration: 1.05, smoothWheel: true });
